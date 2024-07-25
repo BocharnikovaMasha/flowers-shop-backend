@@ -1,0 +1,585 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    border: none;
+    border-radius: 0px;
+}
+
+.body {
+    max-width: 1280px;
+}
+
+.header {
+    background-image: none;
+    background-color: #fff;
+    padding: 0 0 124px 0;
+}
+
+.header-logo {
+    width: 214px;
+    height: 65px;
+    float: left;
+    padding-left: 120px;
+    padding-top: 22px;
+    margin-bottom: 20px;
+}
+
+.header_list {
+    overflow: hidden;
+    display: flex;
+    float: right;
+    padding-right: 120px;
+    padding-top: 47px;
+}
+
+.header_item {
+    font-family: 'Montserrat Alternates';
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.header_link {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.15s, text-decoration 0.15s;
+}
+
+.header_link:hover {
+    color: #494949;
+    text-decoration: underline;
+}
+
+.link1 {
+    margin-left: 92px;
+}
+
+.section_home {
+    background-image: url(images/flowers-background.png);
+    max-width: 1270px;
+    height: 841px;
+    margin: auto;
+    margin-bottom: 59px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.home {
+    display: inline-block;
+    margin-left: 128px;
+    margin-top: 68px;
+    max-width: 1015px;
+    padding-bottom: 1px;
+    background-color: rgba(255, 255, 255, 0.54);
+    border-radius: 129px;
+}
+
+.home_title1 {
+    font-family: 'Libre Caslon Display';
+    font-size: 60px;
+    font-weight: 400;
+    width: 564px;
+    height: 74px;
+    text-align: center;
+    margin: auto;
+}
+
+.home_title3 {
+    font-family: 'Montserrat Alternates';
+    font-size: 30px;
+    font-weight: 400;
+    width: 306px;
+    height: 37px;
+    text-align: center;
+    margin: auto;
+    padding-top: 24px;
+}
+
+.home_description {
+    font-family: 'Montserrat Alternates';
+    font-size: 20px;
+    font-weight: 400;
+    max-width: 958px;
+    height: 76px;
+    text-align: center;
+    margin: auto;
+    margin-top: 14px;
+    padding: 0px 28px 0px 28px;
+}
+
+.button_home {
+    display: flex;
+    margin: 27px auto 36px;
+    background-color: rgb(255, 214, 214);
+    border-radius: 34px;
+    border: 1px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000000;
+    color: #000000;
+    transition: border-color 5s, background-color 0.15s;
+}
+
+.button_home:hover {
+    border-color: #5f5f5f;
+    background-color: rgb(255, 230, 230);
+}
+
+.button_name {
+    font-family: 'Montserrat Alternates';
+    font-weight: 500;
+    font-size: 25px;
+    padding: 14px 26px;
+    text-decoration: none;
+    color: #000000;
+    width: 240px;
+    height: 30px;
+    align-items: center;
+    margin: auto;
+}
+
+.section_sales-hits {
+    background-image: url(images/bg1.png);
+    background-repeat: no-repeat;
+    background-position: center 470px;
+     /* background-size: cover; */
+} 
+
+
+
+.sales-hits_title2 {
+    font-family: 'Libre Caslon Display';
+    font-size: 59px;
+    font-weight: 400;
+    width: 240px;
+    height: 73px;
+    text-align: center;
+    margin: 31px auto 31px;
+}
+
+.sales-hits_description {
+    font-family: 'Montserrat Alternates';
+    font-size: 20px;
+    font-weight: 400;
+    max-width: 1053px;
+    height: 24px;
+    text-align: center;
+    margin: 31px auto 44px;
+}
+
+.sales-hits_menu {
+    margin: auto;
+    max-width: 1300px;
+}
+
+.sales-hits_flowers_list {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sales-hits_item {
+    margin: auto;
+}
+
+.sales-hits_img_link {
+    max-width: 298px;
+    height: 317px;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.sales-hits_btn {
+    display: flex;
+    margin: 0px auto;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000000;
+    background-color: #ffffff00;
+}
+
+.sales-hits_button_name {
+    font-family: 'Montserrat Alternates';
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000000;
+    padding: 6px 20px;
+}
+
+.sales-hits_registration {
+    background-color: rgba(255, 212, 212, 0.95);
+    margin: 63px 200px;
+    border-radius: 148px;
+    border-color: rgba(188, 188, 188, 0.51);
+    border-style: solid;
+    border-width: 3px;
+}
+
+.sales-hits_title3 {
+    font-family: 'Montserrat Alternates';
+    font-size: 30px;
+    font-weight: 400;
+    width: 937px;
+    height: 145px;
+    text-align: center;
+    margin: auto;
+    padding-top: 17px;
+    line-height: 51px;
+}
+
+.sales-hits_questions {
+    display: flex;
+    max-width: 920px;
+    margin: 50px auto;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+input {
+    outline :none;
+}
+
+.sales-hits_name {
+    background-color: #FFE1E1;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1px;
+    border-radius: 100px;
+    color: #000000;
+    font-family: 'Montserrat Alternates';
+    font-weight: 500;
+    font-size: 20px;
+    padding: 10px 40px 10px 34px;
+}
+
+.sales-hits_telephone {
+    background-color: #FFE1E1;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1px;
+    border-radius: 100px;
+    font-family: 'Montserrat Alternates';
+    font-weight: 500;
+    font-size: 20px;
+    padding: 10px 40px 10px 34px;
+}
+
+.indentation {
+    margin-left: 40px;
+}
+
+.sales-hits_btn2  {
+    background-color: rgba(255, 176, 176, 0.8);
+    border-style: solid;
+    border-color: #000000;
+    border-width: 2px;
+    border-radius: 100px;
+    padding: 14px 26px;
+}
+
+.sales-hits_btn_name2 {
+    width: 79px;
+    height: 30px;
+    font-family: 'Montserrat Alternates';
+    font-size: 25px;
+    font-weight: 500;
+    align-content: center;
+    color: #000000;
+    text-decoration: none;
+}
+
+.section_advantages {
+    background-image: url(images/bg2.png);
+    background-repeat: no-repeat;
+    background-position: 355px 40px;
+}
+
+.advantages_title2 {
+    font-family: 'Libre Caslon Display';
+    font-size: 59px;
+    font-weight: 400;
+    width: 249px;
+    height: 73px;
+    text-align: center;
+    margin: 31px auto 31px;
+}
+
+.adnantages_list {
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.advantages_item {
+    margin-right: 7px;
+    padding-left: 70px;
+    margin-bottom: 80px;
+}
+
+.number-1 {
+    background-image: url(icons/1.png);
+    background-repeat: no-repeat;
+}
+
+.number-2 {
+    background-image: url(icons/2.png);
+    background-repeat: no-repeat;
+}
+
+.number-3 {
+    background-image: url(icons/3.png);
+    background-repeat: no-repeat;
+}
+
+.number-4 {
+    background-image: url(icons/4.png);
+    background-repeat: no-repeat;
+}
+
+.advantages_title3_link {
+    font-family: 'Montserrat Alternates';
+    font-weight: 400;
+    font-size: 30px;
+    width: 517px;
+    padding: 35px 0px 13px;
+}
+
+.advantages_description_link {
+    font-family: 'Montserrat Alternates';
+    font-weight: 400;
+    font-size: 20px;
+    width: 534px;
+    padding-bottom: 123px;
+}
+
+
+.link2 {
+    margin-top: -4px;
+    padding-left: 40px;
+}
+
+.link4 {
+    margin-top: -4px;
+    padding-left: 40px;
+}
+
+.section_contacts {
+    background-image: url(images/bg3.png);
+    background-repeat: no-repeat;
+    background-position: 705px 510px;
+}
+
+.contacts_title2 {
+    font-family: 'Libre Caslon Display';
+    font-size: 59px;
+    font-weight: 400;
+    width: 249px;
+    height: 73px;
+    text-align: center;
+    margin: 31px auto 52px;
+}
+
+.contacts_forms {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.contacts_questions {
+    display: block;
+    background-color: rgba(255, 212, 212, 0.95);
+    border-radius: 50px;
+    padding-right: 50px;
+    padding-bottom: 34px;
+    margin-bottom: 159px;
+}
+
+.contacts_title3 {
+    font-family: 'Montserrat Alternates';
+    font-size: 30px;
+    font-weight: 400;
+    padding-top: 39px;
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-bottom: 20px;
+    border-radius: 50px;
+}
+
+input.contacts_input::placeholder {
+    color: #000000;
+}
+
+.contacts_name {
+    display: block;
+    margin-left: 23px;
+    margin-top: 19px;
+}
+
+.contacts_email {
+    display: block;
+    margin-left: 23px;
+}
+
+.contacts_address {
+    display: block;
+    margin-left: 23px;
+}
+
+.contacts_preferences {
+    display: block;
+    margin-left: 23px;
+}
+
+.contacts_input {
+    margin-bottom: 30px;
+    background-color: #FFE1E1;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1px;
+    border-radius: 100px;
+    font-family: 'Montserrat Alternates';
+    font-weight: 500;
+    font-size: 20px;
+    width: 400px;
+    padding: 15px 0px 15px 15px;
+}
+
+.contacts_preferences {
+    max-width: 100%;
+    padding-bottom: 120px;
+    border-radius: 50px;
+    padding-top: 25px;
+    padding-left: 16px;
+}
+
+.contacts_btn {
+    background-color: rgba(255, 176, 176, 0.8);
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1px;
+    border-radius: 100px;
+    padding: 14px 26px;
+    margin-left: 23px;
+}
+
+.contacts_btn_name {
+    font-family: 'Montserrat Alternates';
+    font-size: 25px;
+    font-weight: 500;
+    align-content: center;
+    color: #000000;
+    text-decoration: none;
+}
+
+.questions {
+    padding-right: 0px;
+    margin-left: 160px;
+}
+/* объединить */
+.insta_logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.gmail_logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.phone_logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+/* объединить */
+
+.contacts_img {
+    margin-bottom: 17px;
+    padding-left: 29px;
+}
+
+.img1 {
+    margin-bottom: 32px;
+}
+
+.contacts_link {
+    font-family: 'Montserrat Alternates';
+    font-size: 30px;
+    font-weight: 400;
+    color: #000000;
+    text-decoration: none;
+    border-bottom: 1px solid #000000;
+    padding: 0 0 2px;
+    margin-left: 9px;
+}
+
+.gmail_link {
+    margin-left: 18px;
+}
+
+.contacts_number {
+    font-family: 'Montserrat Alternates';
+    font-size: 30px;
+    font-weight: 400;
+    color: #000000;
+    margin-left: 18px;
+}
+
+.footer {
+    padding-right: 80px;
+    padding-left: 80px;
+    background-color: rgba(255, 212, 212, 0.95);
+}
+
+.footer_menu {
+    max-width: 365px;
+    display: inline-block;
+}
+
+.footer_title4 {
+    font-family: 'Libre Caslon Display';
+    font-size: 30px;
+    font-weight: 400;
+    padding-top: 14px;
+    display: flex;
+}
+
+.footer_list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.footer_link {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Montserrat Alternates';
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.footer_separation {
+    font-family: 'Montserrat Alternates';
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+.footer-law {
+    font-family: 'Montserrat Alternates';
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000000;
+}
+
+.fkfkf {
+    display: flex;
+}

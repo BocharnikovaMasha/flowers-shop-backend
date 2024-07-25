@@ -1,0 +1,270 @@
+{% extends 'online/base.html' %}
+{% load static %}
+{% block title %} Catalog {% endblock %}
+{% block style %} <link rel="stylesheet" href="{% static 'online/css/style.css' %}"> {% endblock %}
+{% block content %}
+
+    <main>
+      <section class="section_home">
+        <div class="container home">
+          <h3 class="home_title3">see for yourself</h3>
+          <!-- <h2></h2> -->
+          <h1 class="home_title1">Please your loved ones</h1>
+          <p class="home_description">
+            We will be able to find exactly what you need. A huge number of
+            colors allows us to create a variety of compositions. Do you want a
+            delicate, bright, luxurious, wedding or any other? Then you should
+            contact us!
+          </p>
+          <button class="button_home">
+            <a href="" class="button_name">PLACE AN ORDER</a>
+          </button>
+        </div>
+      </section>
+
+      <section class="section_sales-hits">
+        <div class="container">
+          <h2 class="sales-hits_title2">Sales Hits</h2>
+          <p class="sales-hits_description">
+            Our florists know and love their job, so they will be happy to help
+            you pick up or assemble a bouquet.
+          </p>
+          <nav class="sales-hits_menu">
+            <ul class="sales-hits_flowers_list">
+              <li class="sales-hits_item">
+                <img
+                  class="sales-hits_img_link"
+                  src="./images/flowers1.png"
+                  alt="flowers"
+                />
+                <button class="sales-hits_btn">
+                  <a href="" class="sales-hits_button_name">Softness</a>
+                </button>
+              </li>
+
+              <li class="sales-hits_item">
+                <img
+                  class="sales-hits_img_link"
+                  src="./images/flowers2.png"
+                  alt="flowers"
+                />
+                <button class="sales-hits_btn">
+                  <a href="" class="sales-hits_button_name">Challenge</a>
+                </button>
+              </li>
+
+              <li class="sales-hits_item">
+                <img
+                  class="sales-hits_img_link"
+                  src="./images/flowers3.png"
+                  alt="flowers"
+                />
+                <button class="sales-hits_btn">
+                  <a href="" class="sales-hits_button_name">Lightness</a>
+                </button>
+              </li>
+
+              <li class="sales-hits_item">
+                <img
+                  class="sales-hits_img_link"
+                  src="./images/flowers4.png"
+                  alt="flowers"
+                />
+                <button class="sales-hits_btn">
+                  <a href="" class="sales-hits_button_name">Brightness</a>
+                </button>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="sales-hits_registration">
+            <h3 class="sales-hits_title3">
+              WATCH MORE OR LEAVE YOUR DETAILS. OUR SPESIALIST WILL CALL YOU
+              WITHIN 20 MINUTES AND WE WILL DEFINITELY FIND SOMETHING FOR YOU!
+            </h3>
+
+            <!-- form -->
+            <form class="sales-hits_questions">
+              <input
+                type="text"
+                class="sales-hits_name contacts_input"
+                placeholder="Your name"
+                name="name"
+              />
+              <input
+                type="tel"
+                class="sales-hits_telephone indentation contacts_input"
+                placeholder="Telephone"
+                name="tel"
+              />
+              <button class="sales-hits_btn2 indentation">
+                <a href="" class="sales-hits_btn_name2">SEND</a>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="section_advantages">
+        <div class="container">
+          <h2 class="advantages_title2">Advantages</h2>
+
+          <nav class="advantages_nav">
+            <ul class="adnantages_list">
+              <li class="advantages_item number-1">
+                <h3 class="advantages_title3_link">
+                  RESPONSIVE AND EXPERIENCED STAFF
+                </h3>
+                <p class="advantages_description_link">
+                  Each of our employees is a professional in their field! They
+                  will be happy to choose a bouquet to suit yourrequirements. We
+                  pay due attention to each of our clients.
+                </p>
+              </li>
+              <li class="advantages_item number-2">
+                <h3 class="advantages_title3_link link link2">
+                  FRESH AND VERY DIFFERENTFOR FLOWERS
+                </h3>
+                <p class="advantages_description_link link2">
+                  Here you will find flowers for every taste and color! The
+                  flowers are properly cared for. Our staff will explain to each
+                  client how to take care of flowers so that they bring joy for
+                  longer.
+                </p>
+              </li>
+              <li class="advantages_item number-3">
+                <h3 class="advantages_title3_link">
+                  FAST DELIVERY AND MANY POINTS OF SALE
+                </h3>
+                <p class="advantages_description_link">
+                  We have a lot of outlets, so you'll probably find us near
+                  home! We also have convenient and practical ordering and fast
+                  delivery. Flowers will be delivered directly to your door!
+                </p>
+              </li>
+              <li class="advantages_item number-4">
+                <h3 class="advantages_title3_link link link4">
+                  FAVORABLE PRICES AND GIFTS FOR THE BOUQUET
+                </h3>
+                <p class="advantages_description_link link4">
+                  The price-quality ratio is at the highest level. When buying a
+                  bouquet, you have the opportunity to choose a decoration for
+                  packing your bouquet completely free of charge.
+                </p>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+
+      <section class="section_contacts">
+        <div class="container contacts">
+          <h2 class="contacts_title2">Contacts</h2>
+          <div class="contacts_forms">
+            <div class="contacts_questions">
+              <h3 class="contacts_title3">MAKING AN ORDER</h3>
+              <form class="contacts_form">
+                <input
+                  type="text"
+                  class="contacts_name contacts_input"
+                  placeholder="Your name"
+                  name="name"
+                />
+
+                <input
+                  type="Email"
+                  class="contacts_email contacts_input"
+                  placeholder="Email"
+                  name="email"
+                />
+
+                <input
+                  type="text"
+                  class="contacts_address contacts_input"
+                  placeholder="Address"
+                  name="address"
+                />
+
+                <input
+                  type="text"
+                  class="contacts_preferences contacts_input"
+                  placeholder="Your preferences (optional)"
+                  name="preferences"
+                />
+
+                <button class="contacts_btn">
+                  <a href="" class="contacts_btn_name">PLACE AN ORDER</a>
+                </button>
+              </form>
+            </div>
+
+              <div class="contacts_questions questions">
+              <h3 class="contacts_title3">SOCIAL NETWORKS AND CONTACTS</h3>
+              <div class="insta_logo">
+                <img class="contacts_img" src="./icons/instagram.png" alt="instagram logo">
+                <a href="" class="contacts_link">@FlowersFHS</a>
+              </div>
+              <div class="gmail_logo">
+                <img class="contacts_img img1" src="./icons/gmail.png" alt="gmail logo">
+                <a href="" class="contacts_link gmail_link">flowersforthesoul@gmail.com</a>
+              </div>
+              <div class="phone_logo">
+                <img class="contacts_img" src="./icons/phone.png" alt="phone logo">
+                <span href="" class="contacts_number">+7(961)19-23-88</span>
+              </div>
+            </div> 
+
+            <!--  сделать списком 
+              <div class="contacts_questions questions">
+              <h3 class="contacts_title3">SOCIAL NETWORKS AND CONTACTS</h3>
+              <div class="insta_logo">
+                <img class="contacts_img" src="./icons/instagram.png" alt="instagram logo">
+                <a href="" class="contacts_link">@FlowersFHS</a>
+              </div>
+              <div class="gmail_logo">
+                <img class="contacts_img img1" src="./icons/gmail.png" alt="gmail logo">
+                <a href="" class="contacts_link gmail_link">flowersforthesoul@gmail.com</a>
+              </div>
+              <div class="phone_logo">
+                <img class="contacts_img" src="./icons/phone.png" alt="phone logo">
+                <span href="" class="contacts_number">+7(961)19-23-88</span>
+              </div>
+            </div> 
+          сделать списком-->
+
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="fkfkf"> 
+        <div class="footer_menu">
+          <h4 class="footer_title4">Menu</h4>
+          <nav class="footer-nav">
+            <ul class="footer_list">
+              <li class="footer_item">
+                <a href="" class="footer_link">Home </a>
+                <span class="footer_separation"> /&nbsp</span>
+              </li>
+              <li class="footer_item">
+                <a href="" class="footer_link">Sales hits </a>
+                <span class="footer_separation"> /&nbsp </span>
+              </li>
+              <li class="footer_item">
+                <a href="" class="footer_link">Advantages </a>
+                <span class="footer_separation"> /&nbsp</span>
+              </li>
+              <li class="footer_item">
+                <a href="" class="footer_link">Contacts </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+          <a href="" class="footer-law"> © Bocharnikova M. D., 2024</a>
+        </div>
+      </div>
+    </footer>
+    {% endblock %}
+  </body>
+</html>
