@@ -6,21 +6,26 @@
 <section>
   <div class="container">
     <h1 class="title1">Catalog</h1>
+
+    {% for product in posts %}
+
     <div class="card" style="width: 18rem">
-      <img src="{% static 'online/images/flowers1.png' %}" class="card-img-top" alt="flowers" />
+      <img src="{{product.img.url}}" class="card-img-top" alt="flowers" />
       <div class="card-body">
-        <h5 class="card-title">Softness</h5>
-        <p class="card-text">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum
-          perferendis nam consequuntur error accusantium enim, ut sunt molestias
-          aliquid illo nobis nulla quidem odio deserunt inventore perspiciatis
-          facilis explicabo rerum!rem
-        </p>
-        <a href="#" class="btn btn-primary">Button</a>
-        <span class="price">1200</span>
-        <span class="sale">-50</span>
+        <h5 class="card-title">{{product.title}}</h5>
+        <p class="card-text">{{product.description}}</p>
+        <div>
+          <a href="#" class="btn btn-primary">Button</a>
+          <span class="price">{{product.price}}</span>
+          <span class="sale">{{product.sale}}</span>
+        </div>
+        <!-- <span class="is_available">{{product.is_available}}</span> -->
+        <!-- <span class="quantily">100 букетов</span> -->
       </div>
     </div>
+
+    {% endfor %}
+
   </div>
 </section>
 {% endblock %}

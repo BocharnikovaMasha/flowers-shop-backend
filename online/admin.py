@@ -5,7 +5,8 @@ from .models import *
 
 @admin.register(Product)  
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ('title', 'img', 'description', 'price', 'rating', 'sale', 'quantily', 'is_available', )
+    list_display = ('title', 'img', 'description', 'price', 'rating', 'sale', )
+    #  'quantily','is_available', 
 
 @admin.register(Order)  
 class OrderAdmin(admin.ModelAdmin):
