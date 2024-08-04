@@ -9,22 +9,65 @@
 
     {% for product in posts %}
 
-    <div class="card" style="width: 18rem">
-      <img src="{{product.img.url}}" class="card-img-top" alt="flowers" />
-      <div class="card-body">
-        <h5 class="card-title">{{product.title}}</h5>
-        <p class="card-text">{{product.description}}</p>
-        <div>
-          <a href="#" class="btn btn-primary">Button</a>
-          <span class="price">{{product.price}}</span>
-          <span class="sale">{{product.sale}}</span>
-        </div>
+    <div class="card">
+      <img src="{{product.img.url}}" class="card_img" alt="flowers" />
+      <div class="card_body">
+        <span class="price">{{product.price}}</span>
+        <span class="sale">{{product.sale}}</span>
+        <h5 class="card_title">{{product.title}}</h5>
+        <p class="card_text">{{product.description}}</p>
+        <button>
+          {% if product.is_available %}
+          <a href="#" class="btn">Подробнее</a>
+          {% else %}
+          <span>Товара нет в наличии</span>
+          {% endif %}
+        </button>
         <!-- <span class="is_available">{{product.is_available}}</span> -->
         <!-- <span class="quantily">100 букетов</span> -->
       </div>
     </div>
 
     {% endfor %}
+
+<div class="two_card">   
+
+    <div class="card">
+      <img src="{% static 'online/images/flowers1.png' %}" class="card_img" alt="flowers" />
+      <div class="card_body1">
+        <span class="price_sale">1050</span>
+        <span class="price"> <s> 1500 </s> </span>
+        <span class="sale">-30%</span>
+        <h5 class="card_title4">Lorem</h5>
+        <p class="card_text1">Ipsum dolor sit amet 
+        consectetur adipisicing elit. 
+        Excepturi dolore vero odit eum et illum nam sit, 
+        possimus mollitia tempore?</p>
+        <button> 
+          <a href="#" class="btn1">Подробнее</a>
+        </button>
+      </div>
+    </div>
+
+    <div class="card one">
+      <div class="three">
+        <span class="sale-block">-30%</span>
+      </div>
+      <div class="card_body1">
+        <span class="price_sale">1050</span>
+        <span class="price"> <s> 1500 </s> </span>
+        <h5 class="card_title4">Lorem</h5>
+        <p class="card_text1">Ipsum dolor sit amet 
+        consectetur adipisicing elit. 
+        Excepturi dolore vero odit eum et illum nam sit, 
+        possimus mollitia tempore?</p>
+        <button> 
+          <a href="#" class="btn1">Подробнее</a>
+        </button>
+      </div>
+    </div>
+
+</div>
 
   </div>
 </section>

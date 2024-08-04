@@ -8,6 +8,8 @@ def home(request):
 
 def catalog(request):
      archive = Product.objects.all()
+     # archive = Product.objects.last()
+     # archive = Product.objects.first()
      return render(request, 'online/catalog.html', {'posts': archive})
      
 # def playlist(request):
@@ -19,4 +21,3 @@ def orders(request):
 
 def order_create(request):
      return render(request, 'online/order_create.html')
-

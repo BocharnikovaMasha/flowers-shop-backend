@@ -1,15 +1,92 @@
+.title1 {
+    font-family: 'Libre Caslon Display';
+    font-size: 55px;
+    font-weight: 400;
+    text-align: center;
+    margin: 10px auto 30px;
+}
+
+.card {
+    width: 280px;
+    margin-bottom: 30px;
+}
+
+/* .card_img {
+    border-radius: 5px;
+} */
+
+.two_card {
+    display: flex;
+}
+
+.one {
+    margin-left: 30px;
+}
+
 .price {
+    font-family: 'Montserrat Alternates';
     color: black;
+}
+
+.price_sale {
+    font-family: 'Montserrat Alternates';
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.card_title4 {
+    font-family: 'Montserrat Alternates';
+    font-size: 20px;
+    font-weight: 600;
+    margin: 6px 0px 2px;
+}
+
+.card_text1 {
+    font-family: 'Montserrat Alternates';
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 0px;
+}
+
+.btn1 {
+    text-decoration: none;
+    font-family: 'Montserrat Alternates';
+    font-weight: 600;
+    padding: 6px 20px 5px 3px;
+    border-top-right-radius: 20px;
+    color: black;
+    background-color: #f6d3d3;
+}
+
+.three {
+    background-image: url(../images/flowers1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-width: 278px;
+    height: 100%;
+    padding-top: 268px;
+    padding-right: 222px;
+}
+
+.sale-block {
+    display: flex;
+    flex-direction: column-reverse;
+    color: white;
+    background-color: brown;
+    border-top-right-radius: 20px;
+    padding-left: 3px;
+}
+
+.price {
+    font-family: 'Montserrat Alternates';
+    color: gray;
+    font-weight: 500;
+    font-size: 18px;
+    margin-left: 5px;
 }
 
 .sale {
-    color: grey;
+    color: brown;
+    font-weight: 600;
 }
-
-.is_available {
-    color: black;
-}
-
-/* .quantily {
-    color: grey;
-} */
