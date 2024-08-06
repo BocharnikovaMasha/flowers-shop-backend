@@ -42,6 +42,10 @@
     margin: 6px 0px 2px;
 }
 
+.card_text {
+    margin: 0px;
+}
+
 .card_text1 {
     font-family: 'Montserrat Alternates';
     font-size: 15px;
@@ -89,4 +93,23 @@
 .sale {
     color: brown;
     font-weight: 600;
+}
+
+.star_nav {
+    display: flex;
+}
+
+.star_item {
+    padding: 0px;
+    margin: 6px 5px 12px 0px;
+}
+
+.link {
+    text-decoration: none;
+    font-family: 'Montserrat Alternates';
+    font-weight: 600;
+    padding: 6px 20px 5px 3px;
+    border-top-right-radius: 20px;
+    color: black;
+    background-color: #f6d3d3;
 }

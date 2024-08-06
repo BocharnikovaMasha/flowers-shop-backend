@@ -13,12 +13,42 @@
       <img src="{{product.img.url}}" class="card_img" alt="flowers" />
       <div class="card_body">
         <span class="price">{{product.price}}</span>
+        {% if product.sale %}
         <span class="sale">{{product.sale}}</span>
+        {% else %}
+        {% endif %}
         <h5 class="card_title">{{product.title}}</h5>
         <p class="card_text">{{product.description}}</p>
-        <button>
+        <nav class="star_nav">
+          <ul class="star_item">
+            <li>
+              <img src="{% static 'online/images/star.png' %}" alt="">
+            </li>
+          </ul>
+          <ul class="star_item">
+            <li>
+              <img src="{% static 'online/images/star.png' %}" alt="">
+            </li>
+          </ul>
+          <ul class="star_item">
+            <li>
+              <img src="{% static 'online/images/star.png' %}" alt="">
+            </li>
+          </ul>
+          <ul class="star_item">
+            <li>
+              <img src="{% static 'online/images/star.png' %}" alt="">
+            </li>
+          </ul>
+          <ul class="star_item">
+            <li>
+              <img src="{% static 'online/images/star.png' %}" alt="">
+            </li>
+          </ul>
+        </nav>
+        <button class="button_card">
           {% if product.is_available %}
-          <a href="#" class="btn">Подробнее</a>
+          <a href="#" class="link">Подробнее</a>
           {% else %}
           <span>Товара нет в наличии</span>
           {% endif %}

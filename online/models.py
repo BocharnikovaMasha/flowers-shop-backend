@@ -13,6 +13,7 @@ class Product(models.Model):
     quantily = models.PositiveIntegerField()
     is_available = models.BooleanField(default = True)
     # title, img, description, price, rating, sale, quantily, is_available
+    # price = models.PositiveIntegerField()
 
 class Order(models.Model):
     adress = models.TextField()
