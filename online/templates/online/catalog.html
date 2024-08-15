@@ -12,43 +12,34 @@
     <div class="card">
       <img src="{{product.img.url}}" class="card_img" alt="flowers" />
       <div class="card_body">
-        <span class="price">{{product.price}}</span>
+        <span class="price {% if product.sale %} s {% endif %}"> {{product.price}} </span>
         {% if product.sale %}
         <span class="sale">{{product.sale}}</span>
-        {% else %}
+        {% else %} 
+        <!-- else можно не писать, если оно пустлое -->
         {% endif %}
         <h5 class="card_title">{{product.title}}</h5>
         <p class="card_text">{{product.description}}</p>
-        <nav class="star_nav">
+        <div class="star_nav"> 
+          <!-- div убрать -->
           <ul class="star_item">
-            <li>
-              <img src="{% static 'online/images/star.png' %}" alt="">
-            </li>
+            {% for star in '12345' %} 
+              <!-- {% comment %} {% if forloop.counter <=5  %} {% endcomment %} -->
+              {% if forloop.counter <= product.rating  %}
+              <li>
+                <img src="{% static 'online/images/star.png' %}" alt="">
+              </li>
+              {% else %}
+              <li>
+                <img src="{% static 'online/images/star.png' %}" alt="" style="filter: grayscale(100%);">
+              </li>
+              {% endif %}
+            {% endfor %}
           </ul>
-          <ul class="star_item">
-            <li>
-              <img src="{% static 'online/images/star.png' %}" alt="">
-            </li>
-          </ul>
-          <ul class="star_item">
-            <li>
-              <img src="{% static 'online/images/star.png' %}" alt="">
-            </li>
-          </ul>
-          <ul class="star_item">
-            <li>
-              <img src="{% static 'online/images/star.png' %}" alt="">
-            </li>
-          </ul>
-          <ul class="star_item">
-            <li>
-              <img src="{% static 'online/images/star.png' %}" alt="">
-            </li>
-          </ul>
-        </nav>
+        </div>
         <button class="button_card">
           {% if product.is_available %}
-          <a href="#" class="link">Подробнее</a>
+          <a href="{% url 'details' product_id=product.id %}" class="link" >Подробнее</a>
           {% else %}
           <span>Товара нет в наличии</span>
           {% endif %}

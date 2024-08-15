@@ -6,6 +6,28 @@
     <section>
         <div class="container">
             <h1 class="title1">Orders</h1>
+
+            {% for order in posts %}
+
+            <div class="card">
+              <div class="card_body">
+                <p class="orders_product">{{order.product.title}}</p>
+                <!-- .title не оббязательно писать, т к во views настройка -->
+                <span>{{order.id}}</span>
+                <p class="orders_adress">{{order.adress}}</p>
+                <span class="order_data">{{order.creаted}}</span>
+                <!-- <button class="button_card">
+                  {% if product.is_available %}
+                  <a href="#" class="link">Подробнее</a>
+                  {% else %}
+                  <span>Товара нет в наличии</span>
+                  {% endif %}
+                </button> -->
+              </div>
+            </div>
+        
+            {% endfor %}
+
         </div>
     </section>
 {% endblock %}

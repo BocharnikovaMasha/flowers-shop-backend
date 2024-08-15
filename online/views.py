@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Product
+from .models import Order
 
 # Create your views here.
 
@@ -17,7 +18,14 @@ def catalog(request):
 #     return render(request, 'playlist/playlist.html', {'posts': archive}) 
 
 def orders(request):
-     return render(request, 'online/orders.html')
+     archive = Order.objects.all()
+     for order in archive:
+          print(order.creаted)
+     return render(request, 'online/orders.html', {'posts': archive})
 
 def order_create(request):
      return render(request, 'online/order_create.html')
+
+def details(request, product_id):
+     product = Product.objects.get(id=product_id) 
+     return render(request, 'online/details.html', {'product': product})

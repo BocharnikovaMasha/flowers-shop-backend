@@ -95,11 +95,8 @@
     font-weight: 600;
 }
 
-.star_nav {
-    display: flex;
-}
-
 .star_item {
+    display: flex;
     padding: 0px;
     margin: 6px 5px 12px 0px;
 }
@@ -112,4 +109,8 @@
     border-top-right-radius: 20px;
     color: black;
     background-color: #f6d3d3;
+}
+
+.s {
+    text-decoration: line-through;
 }

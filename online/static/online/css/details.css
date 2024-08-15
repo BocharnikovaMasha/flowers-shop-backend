@@ -1,0 +1,67 @@
+.title1 {
+    font-family: 'Libre Caslon Display';
+    font-size: 55px;
+    font-weight: 400;
+    text-align: center;
+    margin: 5pxx auto 20px;
+}
+
+.img {
+   max-width: 550px;
+   float: left;
+}
+
+.title3 {
+    font-family: 'Montserrat Alternates';
+    font-size: 23px;
+    font-weight: 500;
+    margin: 6px 0px 2px;
+}
+
+.price {
+    font-family: 'Montserrat Alternates';
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.sale {
+    font-family: 'Montserrat Alternates';
+    color: brown;
+}
+
+.description {
+    font-family: 'Montserrat Alternates';
+    font-size: 20px;
+    font-weight: 400;
+    margin: 6px 0px 2px;
+}
+
+.button_card {
+    text-decoration: none;
+    font-family: 'Montserrat Alternates';
+    font-weight: 600;
+    border-top-right-radius: 20px;
+    color: black;
+    background-color: #f6d3d3;
+}
+
+.link {
+    text-decoration: none;
+    font-family: 'Montserrat Alternates';
+    font-weight: 600;
+    padding: 6px 20px 5px 3px;
+    border-top-right-radius: 20px;
+    color: black;
+    background-color: #f6d3d3;
+}
+
+.star_item {
+    display: flex;
+    padding: 0px;
+    margin: 6px 5px 12px 0px;
+}
+
+.s {
+    margin-left: 560px;
+}

@@ -10,4 +10,4 @@ class ProductAdmin(admin.ModelAdmin):
 
 @admin.register(Order)  
 class OrderAdmin(admin.ModelAdmin):
-    list_display = ('adress', 'crested', )
+    list_display = ('adress', 'creаted', 'product', )
