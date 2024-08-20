@@ -6,6 +6,13 @@
     <section>
         <div class="container">
             <h1 class="title1">Order create</h1>
+            <form action=""  method="post">
+                {% csrf_token %}
+                <input class="form-control mb-2" type="text" placeholder="Адрес" name="adress">
+                <button  class="btn btn-warning mx-auto" type="submit">
+                    Заказать
+                </button>
+            </form>
         </div>
     </section>
 {% endblock %}

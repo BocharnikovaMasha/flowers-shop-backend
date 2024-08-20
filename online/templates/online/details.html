@@ -6,29 +6,31 @@
 <section>
   <div class="container">
     <h1 class="title1">{{ product.title }}</h1>
-    <img class="img" src="{{ product.img.url }}" alt="" />
-    <div class="s">
-      <h3 class="title3">Описание</h3>
-      <p class="description">{{ product.description }}</p>
-      <span class="price">{{ product.price }}</span>
-      <span class="sale">{{ product.sale }}</span>
-      <ul class="star_item">
-          {% for star in '12345' %} 
-            {% if forloop.counter <= product.rating  %}
-            <li>
-              <img src="{% static 'online/images/star.png' %}" alt="">
-            </li>
-            {% else %}
-            <li>
-              <img src="{% static 'online/images/star.png' %}" alt="" style="filter: grayscale(100%);">
-            </li>
-            {% endif %}
-          {% endfor %}
-        </ul>
-      <button class="button_card">
-          <a href="#" class="link">Заказать</a>
-      </button>
-   </div>
+      <div class="div d-flex">
+      <img class="img" src="{{ product.img.url }}" alt="" />
+      <div class="s">
+        <h3 class="title3">Описание</h3>
+        <p class="description">{{ product.description }}</p>
+        <span class="price">{{ product.price }}</span>
+        <span class="sale">{{ product.sale }}</span>
+        <ul class="star_item">
+            {% for star in '12345' %} 
+              {% if forloop.counter <= product.rating  %}
+              <li>
+                <img src="{% static 'online/images/star.png' %}" alt="">
+              </li>
+              {% else %}
+              <li>
+                <img src="{% static 'online/images/star.png' %}" alt="" style="filter: grayscale(100%);">
+              </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        <button class="button_card">
+            <a href="{% url 'order_create' product_id=product.id %}" class="link">Заказать</a>
+        </button>
+    </div>
+  </div>
   </div>
 </section>
 {% endblock %}
