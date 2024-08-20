@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'online',
+    'Core',
 ]
 
 MIDDLEWARE = [
@@ -51,7 +52,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'flowersShop.urls'
+ROOT_URLCONF = 'Core.urls'
 
 TEMPLATES = [
     {
